@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine? 💝</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Quicksand:wght@500;700&display=swap"
+        rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+    <div class="background-container">
+        <!-- Floating hearts will be added by JS -->
+    </div>
+
+    <div class="main-container">
+        <h1 class="question bounce">Hi Lynn, <br>
+            Will you be my Valentine? 💝</h1>
+
+        <div class="buttons-container">
+            <button id="yes-btn" class="btn yes-btn">YES! 💖</button>
+            <button id="no-btn" class="btn no-btn">No 😢</button>
+        </div>
+    </div>
+
+    <div id="success-overlay" class="overlay hidden">
+        <div class="celebration-content">
+            <h1 class="success-message">YAAAAY! 💕 You Made My Day!</h1>
+            <p class="sub-message">Best Valentine Ever! 🌹</p>
+            <div class="interactive-elements">
+                <!-- Placeholder for future share buttons -->
+            </div>
+        </div>
+    </div>
+
+    <audio id="yay-sound" src="./hey.mp3"></audio>
+
+    <script src="firebase-config.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
